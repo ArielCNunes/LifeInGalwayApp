@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535"
+    tools:context=".JohnKeoghs">
+
+    <!--Heading-->
+    <TextView
+        android:id="@+id/johnKeoghsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="@string/john_keoghs_gastropub_heading"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/johnKeoghsHSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Images from the pub-->
+    <HorizontalScrollView
+        android:id="@+id/johnKeoghsHSV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutJohnKeoghs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/johnKeoghsHeading">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/johnKeoghsImage2"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/john_keoghs2" />
+
+            <ImageView
+                android:id="@+id/johnKeoghsImage3"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/johnKeoghsImage2"
+                app:layout_constraintTop_toTopOf="@id/johnKeoghsImage2"
+                app:srcCompat="@drawable/john_keoghs3" />
+
+            <ImageView
+                android:id="@+id/johnKeoghsImage4"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/johnKeoghsImage3"
+                app:layout_constraintTop_toTopOf="@id/johnKeoghsImage3"
+                app:srcCompat="@drawable/john_keoghs4" />
+
+            <ImageView
+                android:id="@+id/johnKeoghsImage5"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/johnKeoghsImage4"
+                app:layout_constraintTop_toTopOf="@id/johnKeoghsImage4"
+                app:srcCompat="@drawable/john_keoghs5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutJohnKeoghs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/johnKeoghsHSV">
+
+        <!--Call-->
+        <ImageButton
+            android:id="@+id/callButtonJohnKeoghs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintBottom_toTopOf="@+id/websiteButtonJohnKeoghs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+        <!--Website-->
+        <ImageButton
+            android:id="@+id/websiteButtonJohnKeoghs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/callButtonJohnKeoghs"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

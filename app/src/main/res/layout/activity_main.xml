@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/verticalScrollViewMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--PLACES TO SEE-->
+            <TextView
+                android:id="@+id/placesToSeeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="@string/places_to_see"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSV1"
+                android:layout_width="410dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/placesToSeeTV">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/eyreSquareButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="#506d62"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/eyre_square"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/aranIslandsButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#506d62"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/aran_islands"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/eyreSquareButton"
+                        app:layout_constraintTop_toTopOf="@id/eyreSquareButton" />
+
+                    <Button
+                        android:id="@+id/galwayCathedralButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#506d62"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/galway_cathedral"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/aranIslandsButton"
+                        app:layout_constraintTop_toTopOf="@id/aranIslandsButton" />
+
+                    <Button
+                        android:id="@+id/galwayMuseumButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#506d62"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/galway_city_museum"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/galwayCathedralButton"
+                        app:layout_constraintTop_toTopOf="@id/galwayCathedralButton" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <!--PUBS & RESTAURANTS-->
+            <TextView
+                android:id="@+id/PubsAndRestaurantsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="@string/pubs_restaurants"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/placesToSeeTV"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSV1" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSV2"
+                android:layout_width="409dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PubsAndRestaurantsTV">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/anPucanButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="#438588"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/an_pucan_pub"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/johnKeoghsButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#438588"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/john_keoghs_gastropub"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/anPucanButton"
+                        app:layout_constraintTop_toTopOf="@id/anPucanButton" />
+
+                    <Button
+                        android:id="@+id/mcSwigganButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#438588"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/mcswiggans"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/johnKeoghsButton"
+                        app:layout_constraintTop_toTopOf="@id/johnKeoghsButton" />
+
+                    <Button
+                        android:id="@+id/ardBiaButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#438588"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/ard_bia_at_nimmos"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/mcSwigganButton"
+                        app:layout_constraintTop_toTopOf="@id/mcSwigganButton" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <!--CINEMAS-->
+            <TextView
+                android:id="@+id/CinemasTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="@string/cinemas"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/PubsAndRestaurantsTV"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSV2" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSV3"
+                android:layout_width="409dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CinemasTV">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/omniplexButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="#6ead9a"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/omniplex_salthill"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/eyeButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#6ead9a"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/eye"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/omniplexButton"
+                        app:layout_constraintTop_toTopOf="@id/omniplexButton" />
+
+                    <Button
+                        android:id="@+id/IMCButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#6ead9a"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/imc"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/eyeButton"
+                        app:layout_constraintTop_toTopOf="@id/eyeButton" />
+
+                    <Button
+                        android:id="@+id/palasButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#6ead9a"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/palas"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/IMCButton"
+                        app:layout_constraintTop_toTopOf="@id/IMCButton" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <!--BEACHES-->
+            <TextView
+                android:id="@+id/BeachesTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="@string/beaches"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/CinemasTV"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSV3" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSV4"
+                android:layout_width="409dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BeachesTV">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/salthillButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="#cfd9b4"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/salthill"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/dogsBayButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#cfd9b4"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/dog_s_bay"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/salthillButton"
+                        app:layout_constraintTop_toTopOf="@id/salthillButton" />
+
+                    <Button
+                        android:id="@+id/silverstrandButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#cfd9b4"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/silverstrand"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/dogsBayButton"
+                        app:layout_constraintTop_toTopOf="@id/dogsBayButton" />
+
+                    <Button
+                        android:id="@+id/renvyleButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="15dp"
+                        android:backgroundTint="#cfd9b4"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/renvyle"
+                        android:textSize="17.5sp"
+                        app:layout_constraintStart_toEndOf="@id/silverstrandButton"
+                        app:layout_constraintTop_toTopOf="@id/silverstrandButton" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <!--MORE-->
+            <TextView
+                android:id="@+id/MoreAboutGalwayTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="@string/more"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/BeachesTV"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalSV4" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSV5"
+                android:layout_width="409dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MoreAboutGalwayTV">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/EmergencyNumbersButton"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="#7f7b82"
+                        android:fontFamily="@font/open_sans_condensed_bold"
+                        android:scaleType="centerCrop"
+                        android:text="@string/emergency_numbers"
+                        android:textSize="17.5sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

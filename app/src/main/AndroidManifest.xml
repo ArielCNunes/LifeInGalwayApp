@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lifeingalway">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcherhdpi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LifeInGalway">
+        <activity
+            android:name=".emergencyNumbers"
+            android:exported="false" />
+        <activity
+            android:name=".Renvyle"
+            android:exported="false" />
+        <activity
+            android:name=".Silverstrand"
+            android:exported="false" />
+        <activity
+            android:name=".DogsBay"
+            android:exported="false" />
+        <activity
+            android:name=".Salthill"
+            android:exported="false" />
+        <activity
+            android:name=".Palas"
+            android:exported="false" />
+        <activity
+            android:name=".IMC"
+            android:exported="false" />
+        <activity
+            android:name=".Eye"
+            android:exported="false" />
+        <activity
+            android:name=".Omniplex"
+            android:exported="false" />
+        <activity
+            android:name=".ArdBia"
+            android:exported="false" />
+        <activity
+            android:name=".McSwiggans"
+            android:exported="false" />
+        <activity
+            android:name=".JohnKeoghs"
+            android:exported="false" />
+        <activity
+            android:name=".AnPucan"
+            android:exported="false" />
+        <activity
+            android:name=".GalwayMuseum"
+            android:exported="false" />
+        <activity
+            android:name=".GalwayCathedral"
+            android:exported="false" />
+        <activity
+            android:name=".AranIslands"
+            android:exported="false" />
+        <activity
+            android:name=".EyreSquare"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

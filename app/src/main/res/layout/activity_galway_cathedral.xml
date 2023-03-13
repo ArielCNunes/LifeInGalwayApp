@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535"
+    tools:context=".GalwayCathedral">
+
+    <TextView
+        android:id="@+id/galwayCathedralHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="@string/galway_cathedral_heading"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/galwayCathedralIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/galwayCathedralIV"
+        android:layout_width="390dp"
+        android:layout_height="280dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutGalwayMuseumButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/galwayCathedralHeading"
+        app:srcCompat="@drawable/galway_cathedral" />
+
+    <Button
+        android:id="@+id/aboutGalwayMuseumButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#506d62"
+        android:fontFamily="@font/open_sans_condensed_bold"
+        android:scaleType="centerCrop"
+        android:text="@string/about_galway_cathedral"
+        android:textSize="17.5sp"
+        app:layout_constraintBottom_toTopOf="@+id/morePicsGalwayMuseumButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/galwayCathedralIV" />
+
+    <Button
+        android:id="@+id/morePicsGalwayMuseumButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#506d62"
+        android:fontFamily="@font/open_sans_condensed_bold"
+        android:scaleType="centerCrop"
+        android:text="@string/more_pictures_galway_cathedral"
+        android:textSize="17.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutGalwayMuseumButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

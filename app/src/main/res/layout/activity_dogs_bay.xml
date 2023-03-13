@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535"
+    tools:context=".DogsBay">
+
+    <!--Heading-->
+    <TextView
+        android:id="@+id/dogsBayHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="@string/dogs_bay_heading"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/dogsBayHSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Images from the beach-->
+    <HorizontalScrollView
+        android:id="@+id/dogsBayHSV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutDogsBay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogsBayHeading">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/dogsBayImage1"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dogsbay4" />
+
+            <ImageView
+                android:id="@+id/dogsBayImage2"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/dogsBayImage1"
+                app:layout_constraintTop_toTopOf="@id/dogsBayImage1"
+                app:srcCompat="@drawable/dogsbay2" />
+
+            <ImageView
+                android:id="@+id/dogsBayImage3"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/dogsBayImage2"
+                app:layout_constraintTop_toTopOf="@id/dogsBayImage2"
+                app:srcCompat="@drawable/dogsbay3" />
+
+            <ImageView
+                android:id="@+id/dogsBayImage4"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/dogsBayImage3"
+                app:layout_constraintTop_toTopOf="@id/dogsBayImage3"
+                app:srcCompat="@drawable/dogsbay1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <!--Buttons-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutDogsBay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogsBayHSV">
+
+        <!--Directions-->
+        <ImageButton
+            android:id="@+id/directionsDogsBay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#cfd9b4"
+            app:layout_constraintBottom_toTopOf="@+id/videoDogsBay"
+            app:layout_constraintEnd_toStartOf="@+id/aboutDogsBay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_dialog_map"
+            app:tint="@android:color/background_dark" />
+
+        <!--About beach-->
+        <Button
+            android:id="@+id/aboutDogsBay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#cfd9b4"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:scaleType="centerCrop"
+            android:text="@string/about_dogs_bay"
+            android:textSize="17.5sp"
+            app:layout_constraintBottom_toTopOf="@+id/videoDogsBay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/directionsDogsBay"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Video-->
+        <Button
+            android:id="@+id/videoDogsBay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#cfd9b4"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:scaleType="centerCrop"
+            android:text="@string/video_dogs_bay"
+            android:textSize="17.5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/directionsDogsBay" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

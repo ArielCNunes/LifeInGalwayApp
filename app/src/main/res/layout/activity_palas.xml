@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535"
+    tools:context=".Palas">
+
+    <!--Heading-->
+    <TextView
+        android:id="@+id/palasHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="@string/palas_heading"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/palasHSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Images from the cinema-->
+    <HorizontalScrollView
+        android:id="@+id/palasHSV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutPalas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palasHeading">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/palasImage1"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/palas1" />
+
+            <ImageView
+                android:id="@+id/palasImage2"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/palasImage1"
+                app:layout_constraintTop_toTopOf="@id/palasImage1"
+                app:srcCompat="@drawable/palas2" />
+
+            <ImageView
+                android:id="@+id/palasImage3"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/palasImage2"
+                app:layout_constraintTop_toTopOf="@id/palasImage2"
+                app:srcCompat="@drawable/palas3" />
+
+            <ImageView
+                android:id="@+id/palasImage4"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/palasImage3"
+                app:layout_constraintTop_toTopOf="@id/palasImage3"
+                app:srcCompat="@drawable/palas4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <!--Buttons-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutPalas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palasHSV">
+
+        <!--Call-->
+        <ImageButton
+            android:id="@+id/callButtonPalas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#6ead9a"
+            app:layout_constraintBottom_toTopOf="@+id/palasBuyTicketButton"
+            app:layout_constraintEnd_toStartOf="@+id/aboutPalasButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/stat_sys_phone_call"
+            app:tint="@android:color/background_dark" />
+
+        <!--About omniplex-->
+        <Button
+            android:id="@+id/aboutPalasButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#6ead9a"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:scaleType="centerCrop"
+            android:text="@string/about_palas"
+            android:textSize="17.5sp"
+            app:layout_constraintBottom_toTopOf="@+id/palasBuyTicketButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/callButtonPalas"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Buy a ticket-->
+        <Button
+            android:id="@+id/palasBuyTicketButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#6ead9a"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:scaleType="centerCrop"
+            android:text="@string/palas_films_showing"
+            android:textSize="17.5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/callButtonPalas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

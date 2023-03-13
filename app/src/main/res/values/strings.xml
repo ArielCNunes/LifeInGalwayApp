@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Life in Galway</string>
+
+    <!--Headings-->
+    <string name="places_to_see">PLACES TO SEE</string>
+    <string name="pubs_restaurants"><![CDATA[PUBS & RESTAURANTS]]></string>
+    <string name="cinemas">CINEMAS</string>
+    <string name="beaches">BEACHES</string>
+    <string name="more">MORE</string>
+
+    <!--Places to see buttons-->
+    <string name="eyre_square">Eyre Square</string>
+    <string name="aran_islands">Aran Islands</string>
+    <string name="galway_cathedral">Galway Cathedral</string>
+    <string name="galway_city_museum">Galway City Museum</string>
+
+    <!--Pubs & Restaurants buttons-->
+    <string name="an_pucan_pub">An Púcán Pub</string>
+    <string name="john_keoghs_gastropub">John Keogh’s Gastropub</string>
+    <string name="mcswiggans">McSwiggan’s</string>
+    <string name="ard_bia_at_nimmos">Ard Bia at Nimmos</string>
+
+    <!--Cinemas buttons-->
+    <string name="omniplex_salthill">Omniplex Salthill</string>
+    <string name="eye">Eye</string>
+    <string name="imc">IMC</string>
+    <string name="palas">Pálás</string>
+
+    <!--Beaches buttons-->
+    <string name="salthill">Salthill</string>
+    <string name="dog_s_bay">Dog\'s Bay</string>
+    <string name="silverstrand">Silverstrand</string>
+    <string name="renvyle">Renvyle</string>
+
+    <!--More about Galway buttons-->
+    <string name="history_of_galway">History of Galway</string>
+    <string name="emergency_numbers">Emergency Numbers</string>
+    <string name="gallery">Gallery</string>
+
+    <!--EYRE SQUARE PAGE-->
+    <string name="eyre_square_heading">EYRE SQUARE</string>
+    <string name="things_to_do_in_eyre_square">Things to do in Eyre Square</string>
+    <string name="more_pictures_eyre_square">More pictures</string>
+
+    <!--ARAN ISLANDS PAGE-->
+    <string name="aran_islands_heading">ARAN ISLANDS</string>
+    <string name="things_to_do_in_aran_islands">Things to do in the Aran Islands</string>
+    <string name="more_pictures_aran_islands">More pictures</string>
+
+    <!--GALWAY CATHEDRAL PAGE-->
+    <string name="galway_cathedral_heading">GALWAY CATHEDRAL</string>
+    <string name="about_galway_cathedral">About Galway Cathedral</string>
+    <string name="more_pictures_galway_cathedral">More pictures</string>
+
+    <!--GALWAY CATHEDRAL PAGE-->
+    <string name="galway_museum_heading">GALWAY CITY MUSEUM</string>
+    <string name="about_galway_museum">About Galway City Museum</string>
+    <string name="more_pictures_galway_museum">More pictures</string>
+
+    <!--An Púcán Pub Page-->
+    <string name="an_púcán_pub_heading">AN PÚCÁN PUB</string>
+
+    <!--John Keogh's Gastropub Page-->
+    <string name="john_keoghs_gastropub_heading">JOHN KEOGH\'S GASTROPUB</string>
+
+    <!--McSwiggans Page-->
+    <string name="mcswiggans_heading">MCSWIGGAN\'S</string>
+
+    <!--Ard Bia's Page-->
+    <string name="ard_bia_at_nimmos_heading">ARD BIA AT NIMMOS</string>
+
+    <!--Omniplex Page-->
+    <string name="omniplex_heading">OMNIPLEX SALTHILL</string>
+    <string name="omniplex_films_showing">Buy a ticket</string>
+    <string name="about_omniplex">About Omniplex</string>
+
+    <!--Eye Page-->
+    <string name="eye_heading">EYE CINEMA</string>
+    <string name="eye_films_showing">Buy a ticket</string>
+    <string name="kids_birthday_party_eye">Kids Birthday Party</string>
+
+    <!--IMC Page-->
+    <string name="imc_heading">IMC CINEMA</string>
+    <string name="imc_films_showing">Buy a ticket</string>
+    <string name="kids_club_imc">Kids\' Club</string>
+
+    <!--Pálás Page-->
+    <string name="palas_heading">PÁLÁS</string>
+    <string name="palas_films_showing">Buy a ticket</string>
+    <string name="about_palas">About Pálás</string>
+
+    <!--Salthill Page-->
+    <string name="salthill_heading">SALTHILL</string>
+    <string name="about_salthill">About Salthill</string>
+    <string name="video_salthill">Glimpse at Salthill</string>
+
+    <!--Dog's Bay Page-->
+    <string name="dogs_bay_heading">DOG\'S BAY</string>
+    <string name="about_dogs_bay">About Dog\'s Bay</string>
+    <string name="video_dogs_bay">Glimpse at Dog\'s Bay</string>
+
+    <!--Silverstrand Page-->
+    <string name="silverstrand_heading">SILVERSTRAND</string>
+    <string name="about_silverstrand">About Silverstrand</string>
+    <string name="video_silverstrand">Glimpse at Silverstrand</string>
+
+    <!--Renvyle Page-->
+    <string name="renvyle_heading">RENVYLE</string>
+    <string name="about_renvyle">About Renvyle</string>
+    <string name="video_renvyle">Glimpse at Renvyle</string>
+
+    <!--EMERGENCY NUMBERS-->
+    <string name="emergency_numbers_heading">EMERGENCY NUMBERS</string>
+    <string name="gards">Garda</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="fire_fighters">Firefighters</string>
+
+
+
+</resources>

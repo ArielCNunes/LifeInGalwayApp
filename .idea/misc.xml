@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.178" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/drawable/round_corner.xml" value="0.191" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/drawable/round_corner_pubs_restaurants.xml" value="0.191" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/drawable/round_outline.xml" value="0.191" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/drawable/roundcorner.xml" value="0.191" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/drawable/rounded_button.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/drawable/rounded_corner.xml" value="0.191" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/drawable/rounded_corner_.xml" value="0.191" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_an_pucan.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_aran_island.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_ard_bia.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_dogs_bay.xml" value="0.28703703703703703" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_emergency_numbers.xml" value="0.28703703703703703" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_eye.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_eyre_square.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_galway_cathedral.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_galway_gallery.xml" value="0.25" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_galway_museum.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_history_of_galway.xml" value="0.28703703703703703" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_imc.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_john_keoghs.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_mc_swiggans.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_omniplex.xml" value="0.3111111111111111" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_palas.xml" value="0.28703703703703703" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_renvyle.xml" value="0.28703703703703703" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_salthill.xml" value="0.3625" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/layout/activity_silverstrand.xml" value="0.28703703703703703" />
+        <entry key="..\:/Users/ariel/Desktop/My Files/Programming/LifeinGalway/app/src/main/res/mipmap-anydpi-v26/ic_launcherd.webp.xml" value="0.178" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

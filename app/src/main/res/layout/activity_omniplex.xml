@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535"
+    tools:context=".Omniplex">
+
+    <!--Heading-->
+    <TextView
+        android:id="@+id/omniplexHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="@string/omniplex_heading"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/omniplexHSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Images from the cinema-->
+    <HorizontalScrollView
+        android:id="@+id/omniplexHSV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutOmniplex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/omniplexHeading">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/omniplexImage1"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/omniplex1" />
+
+            <ImageView
+                android:id="@+id/omniplexImage2"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/omniplexImage1"
+                app:layout_constraintTop_toTopOf="@id/omniplexImage1"
+                app:srcCompat="@drawable/omniplex2" />
+
+            <ImageView
+                android:id="@+id/omniplexImage3"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/omniplexImage2"
+                app:layout_constraintTop_toTopOf="@id/omniplexImage2"
+                app:srcCompat="@drawable/omniplex3" />
+
+            <ImageView
+                android:id="@+id/omniplexImage4"
+                android:layout_width="400dp"
+                android:layout_height="330dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@id/omniplexImage3"
+                app:layout_constraintTop_toTopOf="@id/omniplexImage3"
+                app:srcCompat="@drawable/omniplex4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <!--Buttons-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutOmniplex"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/omniplexHSV">
+
+        <!--Call-->
+        <ImageButton
+            android:id="@+id/callButtonOmniplex"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#6ead9a"
+            app:layout_constraintBottom_toTopOf="@+id/omniplexBuyTicketButton"
+            app:layout_constraintEnd_toStartOf="@+id/aboutOmniplexButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/stat_sys_phone_call"
+            app:tint="@android:color/background_dark" />
+
+        <!--About omniplex-->
+        <Button
+            android:id="@+id/aboutOmniplexButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#6ead9a"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:scaleType="centerCrop"
+            android:text="@string/about_omniplex"
+            android:textSize="17.5sp"
+            app:layout_constraintBottom_toTopOf="@+id/omniplexBuyTicketButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/callButtonOmniplex"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Buy a ticket-->
+        <Button
+            android:id="@+id/omniplexBuyTicketButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#6ead9a"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:scaleType="centerCrop"
+            android:text="@string/omniplex_films_showing"
+            android:textSize="17.5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/callButtonOmniplex" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
